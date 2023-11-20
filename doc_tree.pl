@@ -10,7 +10,7 @@ sub print_node {
     my ($indent, $name, $comment, $last_i, $last_f) = @_;
     for (my $i = 0; $i < $indent; $i++) {
         if ($i == $indent - 1) {
-            if (i < $last_i || $last_f) {
+            if ($i < $last_i || $last_f) {
                 print $indent_node_last;
             } else {
                 print $indent_node;
